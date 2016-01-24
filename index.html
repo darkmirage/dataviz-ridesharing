@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Uber's Market Share</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
+  <script src="./js/visualization.js"></script>
+</head>
+
+<body>
+  <div class="visualization-container container">
+    <h1>Android Install Percentages</h1>
+    <div class="visualization-chart
+                col-md-10 col-md-offset-1
+                col-lg-8 col-lg-offset-2" />
+  </div>
+
+  <script>
+    var viz = new Visualization({
+      element: $('.visualization-chart').get(0),
+    });
+    viz.render();
+
+    // var buttonContainers = $('.visualization-sidebar .nav li');
+    // var descriptionContainers = $('.visualization-description');
+
+    // $('.button').click(function(event) {
+    //   var button = $(this);
+    //   var mode = button.data('mode');
+    //   viz.setMode(mode);
+    //   buttonContainers.removeClass('active');
+    //   descriptionContainers.removeClass('active');
+    //   button.parent().addClass('active');
+    //   $('.visualization-description[data-mode="' + mode + '"]').addClass('active');
+    //   event.preventDefault();
+    // });
+
+    // $('.button-year')
+    //   .mouseover(function() { viz.enableHighlight($(this).data('years')); })
+    //   .mouseout(() => viz.disableHighlight());
+  </script>
+</body>
+
+</html>

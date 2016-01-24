@@ -1,0 +1,41 @@
+app,region,date,share
+Uber,USA,Jan-2015,0.117
+Lyft ,USA,Jan-2015,0.0173
+Uber,India,Jan-2015,0.0085
+Ola cabs,India,Jan-2015,0.0495
+TaxiForSure,India,Jan-2015,0.015
+Easy Taxi,Asia,Jan-2015,0.0075
+GrabTaxi,Asia,Jan-2015,0.0086
+Uber,Asia,Jan-2015,0.0046
+Uber,USA,Feb-2015,0.1396
+Lyft ,USA,Feb-2015,0.0177
+Uber,India,Feb-2015,0.0096
+Ola cabs,India,Feb-2015,0.0623
+TaxiForSure,India,Feb-2015,0.0146
+Easy Taxi,Asia,Feb-2015,0.0072
+GrabTaxi,Asia,Feb-2015,0.0086
+Uber,Asia,Feb-2015,0.0046
+Uber,USA,Mar-2015,0.1595
+Lyft ,USA,Mar-2015,0.0179
+Uber,India,Mar-2015,0.0102
+Ola cabs,India,Mar-2015,0.076
+TaxiForSure,India,Mar-2015,0.0142
+Easy Taxi,Asia,Mar-2015,0.0079
+GrabTaxi,Asia,Mar-2015,0.0087
+Uber,Asia,Mar-2015,0.0046
+Uber,USA,Apr-2015,0.1875
+Lyft ,USA,Apr-2015,0.0166
+Uber,India,Apr-2015,0.0201
+Ola cabs,India,Apr-2015,0.0851
+TaxiForSure,India,Apr-2015,0.0235
+Easy Taxi,Asia,Apr-2015,0.0068
+GrabTaxi,Asia,Apr-2015,0.0103
+Uber,Asia,Apr-2015,0.0051
+Uber,USA,May-2015,0.2035
+Lyft ,USA,May-2015,0.0155
+Uber,India,May-2015,0.0351
+Ola cabs,India,May-2015,0.0976
+TaxiForSure,India,May-2015,0.0313
+Easy Taxi,Asia,May-2015,0.0066
+GrabTaxi,Asia,May-2015,0.0151
+Uber,Asia,May-2015,0.0064
