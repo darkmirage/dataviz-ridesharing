@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Uber's Market Share</title>
+  <title>Ridesharing Market Share</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,10 +20,26 @@
 
 <body>
   <div class="visualization-container container">
-    <h1>Android Install Percentages</h1>
-    <div class="visualization-chart
-                col-md-10 col-md-offset-1
-                col-lg-8 col-lg-offset-2" />
+    <div class="col-md-10 col-md-offset-1
+                col-lg-8 col-lg-offset-2">
+      <div class="header">
+        <h1>Ridesharing Market Share <small>Percentage of installations on Android devices</small></h1>
+
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a href="#" class="button" data-region="USA">USA</a>
+          </li>
+          <li>
+            <a href="#" class="button" data-region="India">India</a>
+          </li>
+          <li>
+            <a href="#" class="button" data-region="Asia">Asia</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="visualization-chart" />
+    </div>
   </div>
 
   <script>
@@ -32,23 +48,16 @@
     });
     viz.render();
 
-    // var buttonContainers = $('.visualization-sidebar .nav li');
-    // var descriptionContainers = $('.visualization-description');
+    var buttonContainers = $('.nav li');
 
-    // $('.button').click(function(event) {
-    //   var button = $(this);
-    //   var mode = button.data('mode');
-    //   viz.setMode(mode);
-    //   buttonContainers.removeClass('active');
-    //   descriptionContainers.removeClass('active');
-    //   button.parent().addClass('active');
-    //   $('.visualization-description[data-mode="' + mode + '"]').addClass('active');
-    //   event.preventDefault();
-    // });
-
-    // $('.button-year')
-    //   .mouseover(function() { viz.enableHighlight($(this).data('years')); })
-    //   .mouseout(() => viz.disableHighlight());
+    $('.button').click(function(event) {
+      var button = $(this);
+      var region = button.data('region');
+      viz.setRegion(region);
+      buttonContainers.removeClass('active');
+      button.parent().addClass('active');
+      event.preventDefault();
+    });
   </script>
 </body>
 

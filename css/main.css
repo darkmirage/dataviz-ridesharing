@@ -1,7 +1,7 @@
 /* Layout */
 
 body {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .visualization-container {
@@ -9,18 +9,48 @@ body {
 }
 
 .visualization-chart {
-  height: 500px;
+  height: 400px;
+}
+
+.header {
+  padding: 20px 50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h1 small {
+  display: block;
+  font-size: 18px;
+}
+
+.nav-pills > li.active > a {
+  background-color: #ed403a !important;
+}
+
+.nav-pills > li > a {
+  color: #dd302a;
+}
+
+a {
+  color: #ed403a;
+}
+
+a.button-year {
+  color: #ed403a;
+  cursor: default;
 }
 
 /* Axes */
 
-.axis {
+.c3-axis {
   fill: #777;
   transition-duration: 0.2s;
 }
 
-.axis path,
-.axis line {
+.c3-axis path,
+.c3-axis line {
   fill: none;
   stroke: #777;
   shape-rendering: crispEdges;
@@ -28,7 +58,14 @@ body {
 
 /* Lines */
 
-.line {
-  fill: none;
-  stroke-width: 3;
+.c3-line {
+  stroke-width:3;
+}
+
+.c3-circle {
+  r: 4;
+}
+
+.c3-circle._expanded_ {
+  r: 6;
 }
